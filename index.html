@@ -6,11 +6,288 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
   <title>Calendario</title>
 </head>
 <body>
-  <h1>Calendario</h1>
+  <div class="page">
+    <header class="header"></header>
+    <div class="sidebar"></div>
+    <main class="calendar">
+      <div class="calendar-week">
+        <div class="timezoneCell">GMT-5</div>
+        <h2 class="calendarDay">
+          <a href="./calendar-by-day.html" aria-label="Domingo 2 de enero del 2022">
+            <time datetime="02-01-2022">
+              <span>DOM</span> <br>
+              <span>2</span>
+            </time>
+          </a>
+        </h2>
+        <h2 class="calendarDay">
+          <a href="./calendar-by-day.html" aria-label="Lunes 3 de Enero del 2022">
+            <time datetime="03-01-2022">
+              <span>LUN</span> <br>
+              <span>3</span>
+            </time>
+          </a>
+        </h2>
+        <h2 class="calendarDay">
+          <a href="./calendar-by-day.html" aria-label="Martes 4 de Enero del 2022">
+            <time datetime="04-01-2022">
+              <span>MAR</span> <br>
+              <span>4</span>
+            </time>
+          </a>
+        </h2>
+        <h2 class="calendarDay">
+          <a href="./calendar-by-day.html" aria-label="Miercoles 5 de Enero del 2022">
+            <time datetime="05-01-2022">
+              <span>MIE</span> <br>
+              <span>5</span>
+            </time>
+          </a>
+        </h2>
+        <h2 class="calendarDay">
+          <a href="./calendar-by-day.html" aria-label="Jueves 6 de Enero del 2022">
+            <time datetime="06-01-2022">
+              <span>JUE</span> <br>
+              <span>6</span>
+            </time>
+          </a>
+        </h2>
+        <h2 class="calendarDay is-selected">
+          <a href="./calendar-by-day.html" aria-label="Viernes 7 de Enero del 2022">
+            <time datetime="07-01-2022">
+              <span>VIE</span> <br>
+              <span>7</span>
+            </time>
+          </a>
+        </h2>
+        <h2 class="calendarDay">
+          <a href="./calendar-by-day.html" aria-label="Sabado 8 de Enero del 2022">
+            <time datetime="08-01-2022">
+              <span>SAB</span> <br>
+              <span>8</span>
+            </time>
+          </a>
+        </h2>
+        <span class="hourCell"></span>
+        <div class="taskCell">
+          <div class="task" tabindex="1" aria-label="de 17:00 a 18:00, hacer ejercicio">
+            <p>Hacer Ejercicio</p>
+            <p>
+              <time datetime="17:00">5</time> - <time datetime="18:00">6 pm</time>
+            </p>
+          </div>
+        </div>
+        <div class="taskCell">
+          <div class="task" tabindex="1" aria-label="de 17:00 a 18:00, hacer ejercicio">
+            <p>Hacer Ejercicio</p>
+            <p>
+              <time datetime="17:00">5</time> - <time datetime="18:00">6 pm</time>
+            </p>
+          </div>
+        </div>
+        <div class="taskCell">
+          <div class="task" tabindex="1" aria-label="de 17:00 a 18:00, hacer ejercicio">
+            <p>Hacer Ejercicio</p>
+            <p>
+              <time datetime="17:00">5 pm</time> - <time datetime="18:00">6 pm</time>
+            </p>
+          </div>
+        </div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">1AM</span>
+        <div class="taskCell is-active"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">2AM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">3AM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">4AM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">5AM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">6AM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">7AM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">8AM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">9AM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">10AM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">11AM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">12PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">1PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">2PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">3PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">4PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">5PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">6PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">7PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">8PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">9PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">10PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <span class="hourCell">11PM</span>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+        <div class="taskCell"></div>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
