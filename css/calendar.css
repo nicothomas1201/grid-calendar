@@ -3,6 +3,7 @@
 @import './calendar-day.css'; 
 @import './timezoneCell.css';
 @import './hour-cell.css';
+@import './current-time.css';
 
 .calendar{
   padding-inline: 1.5rem;
@@ -10,7 +11,8 @@
   --minBlockSize: 4rem;
   --maxBlockSize: auto;  
   --minInlineSize: 5rem;
-  --maxnlineSize: 10rem;
+  --maxnlineSize: 1fr;
+  position: relative;
 }
 
 .calendar-week{
