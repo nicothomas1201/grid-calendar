@@ -1,5 +1,4 @@
 .task{
-  border: 1px solid red;
   background-color: var(--blue10);
   color: var(--white);
   border-radius: .25rem;

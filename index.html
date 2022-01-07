@@ -428,50 +428,63 @@
   </div>
   
   <dialog class="modal">
-    <form>
-      <div class="input">
-        <input required name="title" type="text" placeholder="Añade un titulo">
+    <form class="createTask">
+      <div class="input is-outstandig">
+        <div class="input-body">
+          <input required name="title" type="text" placeholder="Añade un titulo">
+        </div>
       </div>
       <div class="input">
-        <input type="date" name="date" required>
+        <i class="icon-clock"></i>
+        <div class="input-body">
+          <input type="date" name="date" required>
+          <input type="time" name="timeStart" required>
+          <input type="time" name="timeEnd" required>
+        </div>
       </div>
       <div class="input">
-        <input type="time" name="timeStart" required>
+        <i class="icon-users"></i>
+        <div class="input-body">
+          <input type="text" list="guests" name="guests" placeholder="Agregar Invitados" required>
+          <datalist id="guests">
+            <option value="Leonidas"></option>
+            <option value="Carlos"></option>
+            <option value="Miguel"></option>
+            <option value="Sandra"></option>
+            <option value="Cristopher"></option>
+          </datalist>
+        </div>
       </div>
       <div class="input">
-        <input type="time" name="timeEnd" required>
+        <i class="icon-video"></i>
+        <div class="input-body">
+          <input class="button is-primary" type="button" value="Agregar una videoconferencia de Google Meet">
+        </div>
       </div>
       <div class="input">
-        <input type="text" list="guests" name="guests" placeholder="Agregar Invitados" required>
-        <datalist id="guests">
-          <option value="Leonidas"></option>
-          <option value="Carlos"></option>
-          <option value="Miguel"></option>
-          <option value="Sandra"></option>
-          <option value="Cristopher"></option>
-        </datalist>
+        <i class="icon-gps"></i>
+        <div class="input-body">
+          <input name="location" type="text" placeholder="Agregar ubicación">
+        </div>
       </div>
       <div class="input">
-        <input name="location" type="text" placeholder="Agregar ubicación">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <input type="file" multiple>
+        </div>
       </div>
       <div class="input">
-        <input type="file" multiple>
-      </div>
-      <div class="input">
-        <textarea name="description" placeholder="Agregar descripcion" id="" cols="30" rows="10"></textarea>
-      </div>
-      <div class="input">
-        <input type="submit" >
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <textarea name="description" placeholder="Agregar descripcion" id="" cols="30" rows="2"></textarea>
+        </div>
       </div>
     </form>
     <div class="modal-action">
-      <button class="button">Cancelar</button>
+      <button id="close-modal" class="button">Cancelar</button>
       <button class="button is-primary">Guardar</button>
     </div>
   </dialog>
-  <script>
-    const dialog = document.querySelector('.modal');
-    dialog.showModal();
-  </script>
+  <script src="./js/app.js" type="module"></script>
 </body>
 </html>

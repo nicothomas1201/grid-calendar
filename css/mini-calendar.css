@@ -48,5 +48,5 @@
 .miniCalendar-day.is-selected{
   background: var(--blue10);
   border-radius: 50%;
-  color: var(--white)
+  color: #fffffe;
 }
