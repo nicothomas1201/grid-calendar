@@ -1,0 +1,20 @@
+.search{
+  padding-block: .635rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.search-container{
+  background-color: var(--gray10);
+  display: flex;
+  border-radius: .25rem;
+  max-inline-size: 12.25rem;
+  padding-inline-start: 1rem;
+  box-sizing: border-box ;
+  align-items: center;
+  gap: .5rem;
+}
+

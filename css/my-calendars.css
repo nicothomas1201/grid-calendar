@@ -1,0 +1,27 @@
+.myCalendars{
+  max-inline-size: 12.25rem;
+}
+
+.myCalendars-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: .25rem;
+}
+
+
+
+.myCalendars-header span{
+  font: var(--body1-medium);
+}
+
+
+.myCalendars-calendars{
+  list-style: none;
+  margin: 0;
+  padding-inline: 0.4375rem;
+}
+
+.myCalendars-calendars li span{
+  color: var(--gray30);
+}

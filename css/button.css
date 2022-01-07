@@ -39,6 +39,9 @@
   background-color: var(--blue30);
 }
 
+
+.button:hover,
+.button:focus,
 .button.is-secondary:hover, 
 .button.is-secondary:focus,
 .button.is-rounded:hover,
@@ -57,6 +60,8 @@
   border-radius: 50%;
   padding: .5rem;
 }
+
+
 
 .button.is-shadowed{
   box-shadow: 1.0719px 30.9815px 92px rgba(0, 0, 0, 0.0274815), 0.412881px 11.9336px 29.3037px rgba(0, 0, 0, 0.0425185), 0.0873403px 2.52442px 7.4963px rgba(0, 0, 0, 0.07);
