@@ -6,3 +6,7 @@
   padding-inline: 1.5rem;
 }
 
+.sidebar button{
+  align-self: flex-start;
+}
+

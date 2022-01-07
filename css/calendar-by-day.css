@@ -1,0 +1,24 @@
+.calendarByDay .calendarDay{
+  border-block-end: none;  
+  inline-size: 2.75rem;
+  margin-inline-start: 4rem;
+  padding-block-start: 1.5rem;
+  position: initial;
+}
+
+
+.calendarByDay .calendarDay::before{
+  content: '';
+  display: none;
+} 
+
+.calendarByDay-grid{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(24, minmax(4rem, auto));;
+}
+
+.calendarByDay-grid .taskCell{
+  border-inline-end: none;
+}
+
